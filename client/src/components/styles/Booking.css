@@ -1,0 +1,46 @@
+.success-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f5f7fa;
+}
+
+.success-card{
+    width:500px;
+    background:#fff;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 2px 12px rgba(0,0,0,.15);
+}
+
+.success-card h1{
+    color:#28a745;
+    margin-bottom:20px;
+}
+
+.success-card p{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.success-card h3{
+    color:#003580;
+    margin-bottom:25px;
+}
+
+.success-card button{
+    padding:14px 25px;
+    border:none;
+    border-radius:8px;
+    background:#008cff;
+    color:#fff;
+    font-size:17px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.success-card button:hover{
+    background:#006fd6;
+}

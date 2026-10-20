@@ -1,0 +1,75 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f7fa;
+}
+
+.profile-card {
+    width: 420px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,.15);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.profile-card h2 {
+    color: #003580;
+}
+
+.profile-card h3 {
+    margin: 10px 0;
+}
+
+.profile-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.profile-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.profile-edit-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.profile-card button {
+    margin-top: 15px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #008cff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-card button:hover {
+    background: #006fd6;
+}
+
+.profile-edit-btn {
+    background: #003580 !important;
+    margin-right: 8px;
+}
+
+.profile-cancel-btn {
+    background: #777 !important;
+}

@@ -1,0 +1,118 @@
+.flight-status-container {
+  width: 60%;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.flight-status-container h2 {
+  text-align: center;
+  color: #003580;
+  margin-bottom: 8px;
+}
+
+.status-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.status-search {
+  display: flex;
+  gap: 12px;
+}
+
+.status-search input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.status-search button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #008cff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.status-search button:hover {
+  background: #006fd6;
+}
+
+.status-card {
+  margin-top: 25px;
+  padding: 22px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f7f9fc;
+}
+
+.status-card h3 {
+  color: #003580;
+  text-align: center;
+}
+
+.route {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.route div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.route strong {
+  font-size: 20px;
+}
+
+.route span {
+  color: #666;
+}
+
+.arrow {
+  font-size: 24px;
+}
+
+.flight-info {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.status-text {
+  color: #008000;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .flight-status-container {
+    width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .status-search {
+    flex-direction: column;
+  }
+
+  .status-search button {
+    width: 100%;
+  }
+
+  .route {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

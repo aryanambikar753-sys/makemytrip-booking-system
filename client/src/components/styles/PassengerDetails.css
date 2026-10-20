@@ -1,0 +1,340 @@
+.passenger-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #eef5ff, #f8fafc);
+}
+
+.passenger-container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 35px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e4ebf3;
+  box-shadow: 0 12px 35px rgba(0, 53, 128, 0.12);
+}
+
+/* Header */
+
+.passenger-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.passenger-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaf4ff;
+  border-radius: 50%;
+  font-size: 27px;
+}
+
+.passenger-container h2 {
+  margin: 0;
+  color: #003580;
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.passenger-header p {
+  margin: 8px 0 0;
+  color: #727d8c;
+  font-size: 14px;
+}
+
+/* Flight Summary */
+
+.flight-summary {
+  margin-bottom: 28px;
+  padding: 21px;
+  background: linear-gradient(135deg, #f5faff, #eef7ff);
+  border: 1px solid #d8e9fb;
+  border-radius: 13px;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.summary-header h3 {
+  margin: 0;
+  color: #003580;
+  font-size: 19px;
+}
+
+.summary-header span {
+  padding: 5px 11px;
+  border-radius: 20px;
+  background: #e8f8ee;
+  color: #16803c;
+  border: 1px solid #c7ead3;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.summary-airline {
+  margin-bottom: 15px;
+  color: #27364a;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.summary-route {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 17px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e2eaf3;
+}
+
+.summary-route div:not(.summary-arrow) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.summary-route strong {
+  color: #1e293b;
+  font-size: 22px;
+}
+
+.summary-route small {
+  color: #008cff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.summary-arrow {
+  color: #008cff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.summary-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.summary-details div {
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 9px;
+  border: 1px solid #e2eaf3;
+}
+
+.summary-details span {
+  display: block;
+  margin-bottom: 5px;
+  color: #7b8491;
+  font-size: 12px;
+}
+
+.summary-details strong {
+  color: #003580;
+  font-size: 14px;
+}
+
+/* Form */
+
+.passenger-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 7px;
+  color: #26364a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.passenger-form input,
+.passenger-form select {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  border: 1px solid #d2dbe6;
+  border-radius: 9px;
+  background: #fbfcfe;
+  color: #26364a;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.passenger-form input::placeholder {
+  color: #9aa4b2;
+}
+
+.passenger-form input:focus,
+.passenger-form select:focus {
+  border-color: #008cff;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 140, 255, 0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+}
+
+/* Actions */
+
+.passenger-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.passenger-actions button {
+  border: none;
+  border-radius: 9px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-btn {
+  flex: 1;
+  background: #eef1f4;
+  color: #3f4b59;
+}
+
+.back-btn:hover {
+  background: #dfe4e9;
+  transform: translateY(-1px);
+}
+
+.continue-btn {
+  flex: 2;
+  background: linear-gradient(135deg, #008cff, #006fd6);
+  color: #ffffff;
+  box-shadow: 0 5px 14px rgba(0, 140, 255, 0.2);
+}
+
+.continue-btn:hover {
+  background: linear-gradient(135deg, #007be0, #005fbb);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 140, 255, 0.27);
+}
+
+/* Tablet */
+
+@media (max-width: 700px) {
+  .passenger-page {
+    padding: 25px 12px;
+  }
+
+  .passenger-container {
+    padding: 25px 20px;
+    border-radius: 14px;
+  }
+
+  .summary-details {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .passenger-page {
+    padding: 18px 10px;
+  }
+
+  .passenger-container {
+    padding: 22px 16px;
+  }
+
+  .passenger-container h2 {
+    font-size: 24px;
+  }
+
+  .passenger-header p {
+    font-size: 13px;
+  }
+
+  .flight-summary {
+    padding: 16px;
+  }
+
+  .summary-header h3 {
+    font-size: 17px;
+  }
+
+  .summary-route {
+    gap: 18px;
+    padding: 15px 8px;
+  }
+
+  .summary-route strong {
+    font-size: 19px;
+  }
+
+  .summary-arrow {
+    font-size: 20px;
+  }
+
+  .passenger-actions {
+    flex-direction: column;
+  }
+
+  .passenger-actions .back-btn,
+  .passenger-actions .continue-btn {
+    width: 100%;
+    flex: none;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 360px) {
+  .passenger-container {
+    padding: 20px 13px;
+  }
+
+  .summary-route {
+    gap: 10px;
+  }
+
+  .summary-route strong {
+    font-size: 17px;
+  }
+
+  .passenger-form input,
+  .passenger-form select {
+    font-size: 14px;
+  }
+}

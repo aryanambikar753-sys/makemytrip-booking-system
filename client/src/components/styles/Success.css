@@ -1,0 +1,357 @@
+.success-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 18px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #eaf3ff, #f7f9fd 55%, #e8f7f0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.success-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 38px;
+  box-sizing: border-box;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e5ecf4;
+  border-radius: 24px;
+  box-shadow: 0 18px 55px rgba(25, 55, 95, 0.12);
+  animation: successAppear 0.45s ease-out;
+}
+
+@keyframes successAppear {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #e4f8ec;
+  border: 7px solid #f2fbf5;
+  box-sizing: border-box;
+}
+
+.success-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #1ba968;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.success-label {
+  margin: 0 0 10px;
+  color: #15945a;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.success-card > h1 {
+  margin: 0;
+  color: #15345b;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.success-message {
+  max-width: 440px;
+  margin: 13px auto 18px;
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.success-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 15px;
+  border: 1px solid #c9eed9;
+  border-radius: 25px;
+  background: #effbf4;
+  color: #16804b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #20ad67;
+}
+
+.success-booking-details {
+  margin-top: 28px;
+  padding: 22px;
+  text-align: left;
+  border: 1px solid #e2eaf4;
+  border-radius: 16px;
+  background: #f9fbff;
+}
+
+.success-details-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.success-details-heading h2 {
+  margin: 0;
+  color: #203b60;
+  font-size: 18px;
+}
+
+.success-details-heading > span {
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #e8f2ff;
+  color: #176bc4;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.success-booking-id {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  border: 1px dashed #cbd9e9;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.success-booking-id span,
+.success-info-grid span {
+  color: #7b899b;
+  font-size: 12px;
+}
+
+.success-booking-id strong {
+  color: #176bc4;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.success-route {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(55px, 0.6fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  margin: 23px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5ebf3;
+}
+
+.success-city {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.success-city strong {
+  color: #19375f;
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+
+.success-city span {
+  color: #7b899b;
+  font-size: 12px;
+}
+
+.success-city-right {
+  text-align: right;
+}
+
+.success-route-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #1680e8;
+  font-size: 20px;
+}
+
+.success-route-line div {
+  width: 100%;
+  border-top: 2px dashed #a9c9ed;
+}
+
+.success-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.success-info-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.success-info-grid strong {
+  color: #2b405b;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.success-info-grid > div:last-child strong {
+  color: #128c54;
+  font-size: 16px;
+}
+
+.success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.success-primary-btn,
+.success-secondary-btn {
+  width: 100%;
+  min-height: 49px;
+  padding: 13px 18px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.success-primary-btn {
+  border: none;
+  background: linear-gradient(135deg, #1688f5, #0068d9);
+  color: #ffffff;
+  box-shadow: 0 7px 16px rgba(0, 112, 225, 0.2);
+}
+
+.success-primary-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #0878e8, #0059bd);
+  box-shadow: 0 10px 20px rgba(0, 112, 225, 0.23);
+}
+
+.success-secondary-btn {
+  border: 1px solid #d5e0ed;
+  background: #ffffff;
+  color: #38516e;
+}
+
+.success-secondary-btn:hover {
+  background: #f0f6ff;
+  border-color: #a8c9ee;
+}
+
+.success-footer {
+  margin: 24px 0 0;
+  color: #8491a2;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .success-page {
+    padding: 20px 11px;
+    align-items: flex-start;
+  }
+
+  .success-card {
+    margin: 10px 0;
+    padding: 27px 17px;
+    border-radius: 18px;
+  }
+
+  .success-icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .success-icon span {
+    width: 43px;
+    height: 43px;
+    font-size: 27px;
+  }
+
+  .success-card > h1 {
+    font-size: 25px;
+  }
+
+  .success-message {
+    font-size: 13px;
+  }
+
+  .success-booking-details {
+    padding: 17px 12px;
+  }
+
+  .success-details-heading h2 {
+    font-size: 16px;
+  }
+
+  .success-route {
+    gap: 7px;
+    padding: 17px 0;
+  }
+
+  .success-city strong {
+    font-size: 15px;
+  }
+
+  .success-city span {
+    font-size: 11px;
+  }
+
+  .success-info-grid {
+    gap: 16px 10px;
+  }
+
+  .success-booking-id {
+    align-items: flex-start;
+  }
+
+  .success-booking-id strong {
+    max-width: 62%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .success-card {
+    animation: none;
+  }
+
+  .success-primary-btn,
+  .success-secondary-btn {
+    transition: none;
+  }
+}

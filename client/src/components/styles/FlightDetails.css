@@ -1,0 +1,460 @@
+.flight-details-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef5ff, #f7f9fc);
+  padding: 45px 20px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.details-card {
+  width: 100%;
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px;
+  box-sizing: border-box;
+  box-shadow: 0 12px 35px rgba(0, 53, 128, 0.12);
+  border: 1px solid #e7edf5;
+}
+
+/* Header */
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e7edf5;
+}
+
+.top-section h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #003580;
+  font-weight: 700;
+}
+
+.top-section p {
+  margin: 7px 0 0;
+  color: #7a8492;
+  font-size: 14px;
+}
+
+.top-section h2 {
+  margin: 0;
+  color: #008cff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* Travel Information */
+
+.travel-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: #f5faff;
+  padding: 17px 20px;
+  border-radius: 11px;
+  margin-bottom: 25px;
+  border: 1px solid #dcecff;
+}
+
+.travel-info p {
+  margin: 0;
+  color: #566273;
+  font-size: 15px;
+}
+
+.travel-info strong {
+  color: #003580;
+}
+
+/* Route */
+
+.route-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #f8fbff, #f2f8ff);
+  border: 1px solid #dcecff;
+  border-radius: 14px;
+  padding: 32px 25px;
+  margin-bottom: 30px;
+}
+
+.city {
+  text-align: center;
+  min-width: 160px;
+}
+
+.city h2 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.city p {
+  color: #7b8491;
+  margin: 7px 0;
+  font-size: 14px;
+}
+
+.city h3 {
+  margin: 8px 0 0;
+  color: #008cff;
+  font-size: 20px;
+}
+
+.middle {
+  text-align: center;
+  flex: 1;
+  padding: 0 15px;
+}
+
+.middle h3 {
+  margin: 0;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.middle p {
+  font-size: 21px;
+  margin: 11px 0;
+  color: #008cff;
+  white-space: nowrap;
+}
+
+.middle span {
+  display: inline-block;
+  color: #16803c;
+  background: #eaf8ef;
+  border: 1px solid #c8ecd4;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Flight Information */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background: #ffffff;
+  border-radius: 11px;
+  padding: 20px;
+  border: 1px solid #e7edf5;
+  border-left: 4px solid #008cff;
+  transition: all 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 53, 128, 0.1);
+  border-color: #d8e8fa;
+}
+
+.info-card h3 {
+  margin: 0 0 8px;
+  color: #003580;
+  font-size: 16px;
+}
+
+.info-card p {
+  margin: 0;
+  color: #475569;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Fare Summary */
+
+.fare-box {
+  background: #f8fbff;
+  border: 1px solid #dcecff;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.fare-box h2 {
+  margin: 0 0 20px;
+  color: #003580;
+  font-size: 22px;
+}
+
+.fare-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px 0;
+  color: #596575;
+  font-size: 15px;
+}
+
+.fare-row span:last-child {
+  color: #26364a;
+  font-weight: 600;
+}
+
+.fare-box hr {
+  border: none;
+  border-top: 1px solid #dce3eb;
+  margin: 20px 0;
+}
+
+.fare-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #008cff;
+}
+
+/* Highlights */
+
+.highlights {
+  background: #ffffff;
+  border: 1px solid #e7edf5;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.highlights h2 {
+  margin: 0 0 17px;
+  color: #003580;
+  font-size: 22px;
+}
+
+.highlights ul {
+  margin: 0;
+  padding-left: 5px;
+  list-style: none;
+}
+
+.highlights li {
+  margin-bottom: 11px;
+  color: #475569;
+  font-size: 15px;
+}
+
+.highlights li:last-child {
+  margin-bottom: 0;
+}
+
+/* Buttons */
+
+.flight-details-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.flight-details-actions .back-btn,
+.flight-details-actions .continue-btn {
+  border: none;
+  border-radius: 9px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.flight-details-actions .back-btn {
+  flex: 1;
+  background: #eef1f4;
+  color: #3f4b59;
+}
+
+.flight-details-actions .back-btn:hover {
+  background: #dfe4e9;
+  transform: translateY(-1px);
+}
+
+.flight-details-actions .continue-btn {
+  flex: 2;
+  background: linear-gradient(135deg, #008cff, #006fd6);
+  color: #ffffff;
+  box-shadow: 0 5px 14px rgba(0, 140, 255, 0.2);
+}
+
+.flight-details-actions .continue-btn:hover {
+  background: linear-gradient(135deg, #007be0, #005fbb);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 140, 255, 0.28);
+}
+
+/* No Flight Selected */
+
+.flight-details-page .details-card > h2 {
+  margin-top: 0;
+  color: #003580;
+  text-align: center;
+}
+
+.flight-details-page .details-card > p {
+  color: #667085;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .details-card {
+    padding: 28px;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .route-box {
+    padding: 28px 15px;
+  }
+
+  .city {
+    min-width: 135px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .flight-details-page {
+    padding: 22px 12px;
+  }
+
+  .details-card {
+    padding: 21px;
+    border-radius: 14px;
+  }
+
+  .top-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .top-section h1 {
+    font-size: 26px;
+  }
+
+  .top-section h2 {
+    font-size: 25px;
+  }
+
+  .travel-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .route-box {
+    flex-direction: column;
+    gap: 22px;
+    padding: 25px 15px;
+  }
+
+  .city {
+    min-width: 0;
+  }
+
+  .city h2 {
+    font-size: 25px;
+  }
+
+  .middle {
+    width: 100%;
+    padding: 0;
+  }
+
+  .middle p {
+    font-size: 17px;
+    overflow: hidden;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .fare-box {
+    padding: 20px;
+  }
+
+  .fare-total {
+    font-size: 20px;
+  }
+
+  .flight-details-actions {
+    flex-direction: column;
+  }
+
+  .flight-details-actions .back-btn,
+  .flight-details-actions .continue-btn {
+    width: 100%;
+    flex: none;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 400px) {
+  .flight-details-page {
+    padding: 15px 8px;
+  }
+
+  .details-card {
+    padding: 16px;
+  }
+
+  .top-section h1 {
+    font-size: 23px;
+  }
+
+  .top-section h2 {
+    font-size: 22px;
+  }
+
+  .route-box {
+    padding: 20px 10px;
+  }
+
+  .city h2 {
+    font-size: 22px;
+  }
+
+  .city h3 {
+    font-size: 18px;
+  }
+
+  .fare-row {
+    font-size: 14px;
+  }
+
+  .fare-total {
+    font-size: 18px;
+  }
+
+  .highlights {
+    padding: 20px;
+  }
+
+  .flight-details-actions .back-btn,
+  .flight-details-actions .continue-btn {
+    font-size: 15px;
+  }
+}

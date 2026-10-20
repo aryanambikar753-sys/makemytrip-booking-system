@@ -1,0 +1,56 @@
+.hero {
+  min-height: 350px;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.hero h1 {
+  font-size: 55px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+/* Tablet */
+@media (max-width: 700px) {
+  .hero {
+    min-height: 280px;
+    padding: 25px 15px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+  .hero {
+    min-height: 250px;
+    padding: 20px 12px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .hero p {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
